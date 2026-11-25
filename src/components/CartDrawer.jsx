@@ -76,7 +76,7 @@ export default function CartDrawer() {
       />
 
       {/* Outer wrapper: 100% responsive without overflow */}
-      <div className="fixed inset-y-0 right-0 max-w-full flex w-full justify-end pointer-events-none">
+      <div className="fixed inset-y-0 right-0 w-full min-w-0 max-w-[480px] flex justify-end pointer-events-none">
         <div className="w-full sm:max-w-md bg-[#FAF6F3] shadow-2xl flex flex-col justify-between h-full pointer-events-auto overflow-hidden">
           
           {/* Header */}
