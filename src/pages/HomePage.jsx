@@ -183,9 +183,9 @@ export default function HomePage({ onNavigate, onOpenDishModal, onBookTableClick
               </div>
             </div>
 
-            {/* Main Ribeye Steak Skillet/Plate Image */}
-            <div className="relative w-[320px] sm:w-[440px] md:w-[480px] lg:w-[520px] aspect-square rounded-full p-3 sm:p-5 bg-gradient-to-br from-white/80 via-white/40 to-transparent shadow-[0_30px_70px_rgba(30,20,15,0.18)]">
-              <div className="w-full h-full rounded-full overflow-hidden shadow-2xl ring-8 ring-white relative group cursor-pointer">
+            {/* Main Ribeye Steak Skillet/Plate Image - Fully responsive on all small screens */}
+            <div className="relative w-[270px] sm:w-[420px] md:w-[480px] lg:w-[520px] max-w-full aspect-square rounded-full p-2.5 sm:p-5 bg-gradient-to-br from-white/80 via-white/40 to-transparent shadow-[0_30px_70px_rgba(30,20,15,0.18)]">
+              <div className="w-full h-full rounded-full overflow-hidden shadow-2xl ring-4 sm:ring-8 ring-white relative group cursor-pointer">
                 <img
                   src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80"
                   alt="Flame-grilled Prime Ribeye with rosemary and potato wedges"
@@ -196,9 +196,9 @@ export default function HomePage({ onNavigate, onOpenDishModal, onBookTableClick
                 <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-white/10 pointer-events-none" />
 
                 {/* Interactive quick dish tag */}
-                <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-stone-900/85 backdrop-blur-md text-white text-xs px-4 py-2 rounded-full font-medium shadow-lg flex items-center gap-2">
-                  <Flame className="w-3.5 h-3.5 text-amber-400" />
-                  <span>Prime Tomahawk Ribeye • Rs. 4,800</span>
+                <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-stone-900/85 backdrop-blur-md text-white text-[11px] sm:text-xs px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium shadow-lg flex items-center gap-1.5 sm:gap-2 whitespace-nowrap max-w-[92%] truncate">
+                  <Flame className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
+                  <span className="truncate">Prime Tomahawk Ribeye • Rs. 4,800</span>
                 </div>
               </div>
             </div>

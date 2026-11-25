@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, ArrowRight, Heart, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowRight, Heart, CheckCircle } from 'lucide-react';
 import { InstagramIcon, FacebookIcon, TwitterIcon } from './SocialIcons';
 import { RESTAURANT_INFO } from '../data/restaurantInfo';
 import { createNewsletterSubscription } from '../lib/supabase';
+
+const CURRENT_YEAR = new Date().getFullYear();
 
 export default function Footer({ onNavigate }) {
   const [newsletterEmail, setNewsletterEmail] = useState('');
@@ -155,7 +157,7 @@ export default function Footer({ onNavigate }) {
 
         {/* Bottom copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
-          <p>© {new Date().getFullYear()} Foody Experience Inc. All rights reserved.</p>
+          <p>© {CURRENT_YEAR} Foody Experience Inc. All rights reserved.</p>
           <p className="flex items-center gap-1">
             Crafted with <Heart className="w-3.5 h-3.5 text-[#B21818] fill-[#B21818]" /> for unforgettable gastronomic moments
           </p>

@@ -91,7 +91,7 @@ export default function AboutPage({ onNavigate, onBookTableClick }) {
             </div>
 
             {/* Experience Pill */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl border border-stone-100 max-w-xs">
+            <div className="absolute -bottom-6 left-2 sm:-left-6 bg-white p-4 sm:p-5 rounded-2xl shadow-xl border border-stone-100 max-w-xs">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center font-bold">
                   <Award className="w-5 h-5" />
